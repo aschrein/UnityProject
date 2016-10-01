@@ -81,7 +81,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\common_scripts\HealthBar.cs" />
+    <Compile Include="Assets\common\scripts\CurveDrawer.cs" />
+    <Compile Include="Assets\common\scripts\HealthBar.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

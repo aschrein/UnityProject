@@ -81,8 +81,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\common\scripts\CurveDrawer.cs" />
-    <Compile Include="Assets\common\scripts\HealthBar.cs" />
+    <Compile Include="Assets\sandbox\Bullet.cs" />
+    <Compile Include="Assets\sandbox\CurveDrawer.cs" />
+    <Compile Include="Assets\sandbox\EnemyUnit.cs" />
+    <Compile Include="Assets\sandbox\HealthBar.cs" />
+    <Compile Include="Assets\sandbox\SpawnPoint.cs" />
+    <Compile Include="Assets\sandbox\Tower.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

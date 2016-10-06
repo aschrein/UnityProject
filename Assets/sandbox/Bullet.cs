@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour
 	void Update()
 	{
 		lifetime -= Time.deltaTime;
-		if( lifetime <= 0.0f )
+		if( lifetime <= 0.0f || target == null )
 		{
 			Destroy( gameObject );
 			return;
@@ -30,6 +30,6 @@ public class Bullet : MonoBehaviour
 			return;
 		}
 		//dr = dr.normalized;
-		transform.position += dir * 20.0f * Time.deltaTime;
+		transform.position += dir * 80.0f * Time.deltaTime;
 	}
 }

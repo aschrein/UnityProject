@@ -5,29 +5,25 @@ using UnityEngine;
 public class SpawnPoint : MonoBehaviour
 {
 	public GameObject enemy_unit_prefab;
-	public GameObject target;
+	public PathNode origin_path_node;
 	public float spawn_cooldown;
-	float timer = 0.0f;
-	// Use this for initialization
 	void Start()
 	{
-
+		StartCoroutine( spawn() );
 	}
-	void spawn()
+	IEnumerator spawn()
 	{
-		var new_unit = Instantiate( enemy_unit_prefab ,
-			new Vector3( transform.position.x , 0.0f , transform.position.z ) ,
-			Quaternion.identity , transform );
-		new_unit.GetComponent<EnemyUnit>().target = target;
+		while( true )
+		{
+			var new_unit = Instantiate( enemy_unit_prefab ,
+				new Vector3( transform.position.x , 0.0f , transform.position.z ) ,
+				Quaternion.identity , transform );
+			new_unit.GetComponent<EnemyUnit>().target = origin_path_node;
+			yield return new WaitForSeconds( spawn_cooldown );
+		}
+		yield return null;
 	}
-	// Update is called once per frame
 	void Update()
 	{
-		timer -= Time.deltaTime;
-		if( timer <= 0.0f )
-		{
-			timer = spawn_cooldown;
-			spawn();
-		}
 	}
 }

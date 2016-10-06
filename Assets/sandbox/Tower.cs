@@ -49,7 +49,7 @@ public class Tower : MonoBehaviour
 			var vel = ( end_pos - start_pos ) / Time.deltaTime;
 			var unit_speed = vel.magnitude;
 			var dr = transform.position - end_pos;
-			var bullet_speed = 20.0f;
+			var bullet_speed = 80.0f;
 			var a = bullet_speed * bullet_speed - unit_speed * unit_speed;
 			var b = 2 * Vector3.Dot( vel , dr );
 			var c = -dr.sqrMagnitude;

@@ -13,8 +13,6 @@ public class NodeEditor : EditorWindow
 	{
 		NodeEditor editor = EditorWindow.GetWindow<NodeEditor>();
 	}
-
-
 	void OnGUI()
 	{
 		if( windowsToAttach.Count == 2 )

@@ -2,12 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+[System.Serializable]
 [CustomEditor(typeof(PathNode))]
 public class WayPointEditor : Editor
 {
+	static PathNode last_selection;
+	static bool pick_next_active;
+	static int pick_slot;
 	public override void OnInspectorGUI()
 	{
 		var path_node = ( PathNode )target;
+		if( pick_next_active && path_node != last_selection )
+		{
+			last_selection.next[ pick_slot ] = path_node;
+			path_node.income.Add( last_selection );
+			pick_next_active = false;
+		}
 		int div_index = -1;
 		int rem_index = -1;
 		for( int i = 0; i < path_node.next.Count; i++ )
@@ -26,11 +36,18 @@ public class WayPointEditor : Editor
 			{
 				rem_index = i;
 			}
+			if( GUILayout.Button( "pick" ) )
+			{
+				last_selection = path_node;
+				pick_next_active = true;
+				pick_slot = i;
+			}
 			GUILayout.EndHorizontal();
 		}
 		if( rem_index > -1 )
 		{
 			path_node.next.RemoveAt( rem_index );
+			SceneView.RepaintAll();
 		}
 		if( div_index > -1 )
 		{
@@ -40,6 +57,7 @@ public class WayPointEditor : Editor
 			node_c.next.Add( path_node.next[ div_index ] );
 			new_node.transform.position = ( path_node.transform.position + path_node.next[ div_index ].transform.position ) * 0.5f;
 			path_node.next[ div_index ] = node_c;
+			SceneView.RepaintAll();
 		}
 		if( GUILayout.Button( "add field" ) )
 		{
@@ -61,6 +79,7 @@ public class WayPointEditor : Editor
 				}
 			}
 			DestroyImmediate( path_node.gameObject );
+			SceneView.RepaintAll();
 		}
 	}
 }

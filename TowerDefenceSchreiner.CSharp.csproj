@@ -81,15 +81,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\sandbox\Bullet.cs" />
-    <Compile Include="Assets\sandbox\CameraMotion.cs" />
-    <Compile Include="Assets\sandbox\CurveDrawer.cs" />
-    <Compile Include="Assets\sandbox\EnemyUnit.cs" />
+    <Compile Include="Assets\common\scripts\CameraMotion.cs" />
+    <Compile Include="Assets\common\scripts\Constants.cs" />
+    <Compile Include="Assets\common\scripts\CurveDrawer.cs" />
+    <Compile Include="Assets\common\scripts\MiniMap.cs" />
+    <Compile Include="Assets\common\scripts\PathNode.cs" />
+    <Compile Include="Assets\common\scripts\SceneMeta.cs" />
+    <Compile Include="Assets\common\scripts\SpawnPoint.cs" />
+    <Compile Include="Assets\prefabs\ammo\Bullet.cs" />
+    <Compile Include="Assets\prefabs\characters\EnemyUnit.cs" />
+    <Compile Include="Assets\prefabs\towers\Tower.cs" />
     <Compile Include="Assets\sandbox\HealthBar.cs" />
-    <Compile Include="Assets\sandbox\MiniMap.cs" />
-    <Compile Include="Assets\sandbox\PathNode.cs" />
-    <Compile Include="Assets\sandbox\SpawnPoint.cs" />
-    <Compile Include="Assets\sandbox\Tower.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\common\shaders\StandartShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

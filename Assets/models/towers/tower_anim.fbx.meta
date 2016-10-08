@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: a1e098f54e4575a4ebc20c3d97110d78
+timeCreated: 1475858302
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature.001
+    100004: Armature.002
+    100006: Bone
+    100008: Bone 1
+    100010: Bone 2
+    100012: Bone.001
+    100014: Bone.001 1
+    100016: Bone.001 2
+    100018: Bone.002
+    100020: Bone.002 1
+    100022: Bone.002 2
+    100024: Bone.002_end
+    100026: Bone.003
+    100028: Bone.003 1
+    100030: Bone.003 2
+    100032: Bone.003_end
+    100034: Bone.004
+    100036: Bone.004 1
+    100038: Bone.004_end
+    100040: Bone.004_end 1
+    100042: Cube.029
+    100044: Cube.031
+    100046: Cube.032
+    100048: Cube.033
+    100050: Cylinder.001
+    100052: Cylinder.002
+    100054: Cylinder.003
+    100056: Cylinder.004
+    100058: Cylinder.005
+    100060: Cylinder.006
+    100062: Cylinder.007
+    100064: Cylinder.008
+    100066: Cylinder.009
+    100068: //RootNode
+    100070: Cube.000
+    100072: l_0
+    100074: l_1
+    100076: l_2
+    100078: l_3
+    100080: l_3_end
+    100082: r_0
+    100084: r_1
+    100086: r_2
+    100088: r_3
+    100090: r_3_end
+    100092: root
+    100094: root.001
+    100096: root.002
+    100098: root.002_end
+    100100: Cube.001
+    100102: base
+    100104: body
+    100106: rotator
+    100108: pivot
+    400000: Armature
+    400002: Armature.001
+    400004: Armature.002
+    400006: Bone
+    400008: Bone 1
+    400010: Bone 2
+    400012: Bone.001
+    400014: Bone.001 1
+    400016: Bone.001 2
+    400018: Bone.002
+    400020: Bone.002 1
+    400022: Bone.002 2
+    400024: Bone.002_end
+    400026: Bone.003
+    400028: Bone.003 1
+    400030: Bone.003 2
+    400032: Bone.003_end
+    400034: Bone.004
+    400036: Bone.004 1
+    400038: Bone.004_end
+    400040: Bone.004_end 1
+    400042: Cube.029
+    400044: Cube.031
+    400046: Cube.032
+    400048: Cube.033
+    400050: Cylinder.001
+    400052: Cylinder.002
+    400054: Cylinder.003
+    400056: Cylinder.004
+    400058: Cylinder.005
+    400060: Cylinder.006
+    400062: Cylinder.007
+    400064: Cylinder.008
+    400066: Cylinder.009
+    400068: //RootNode
+    400070: Cube.000
+    400072: l_0
+    400074: l_1
+    400076: l_2
+    400078: l_3
+    400080: l_3_end
+    400082: r_0
+    400084: r_1
+    400086: r_2
+    400088: r_3
+    400090: r_3_end
+    400092: root
+    400094: root.001
+    400096: root.002
+    400098: root.002_end
+    400100: Cube.001
+    400102: base
+    400104: body
+    400106: rotator
+    400108: pivot
+    2300000: Cube.029
+    2300002: Cylinder.001
+    2300004: Cylinder.002
+    2300006: Cylinder.003
+    2300008: Cylinder.004
+    2300010: Cylinder.005
+    2300012: Cylinder.006
+    2300014: Cylinder.007
+    2300016: Cylinder.008
+    2300018: Cylinder.009
+    2300020: Cube.000
+    2300022: Cube.001
+    2300024: base
+    2300026: rotator
+    2300028: pivot
+    2300030: body
+    3300000: Cube.029
+    3300002: Cylinder.001
+    3300004: Cylinder.002
+    3300006: Cylinder.003
+    3300008: Cylinder.004
+    3300010: Cylinder.005
+    3300012: Cylinder.006
+    3300014: Cylinder.007
+    3300016: Cylinder.008
+    3300018: Cylinder.009
+    3300020: Cube.000
+    3300022: Cube.001
+    3300024: base
+    3300026: rotator
+    3300028: pivot
+    3300030: body
+    4300000: Cube.033
+    4300002: Cube.032
+    4300004: Cylinder.009
+    4300006: Cube.029
+    4300008: Cylinder.007
+    4300010: Cylinder.001
+    4300012: Cylinder.002
+    4300014: Cylinder.003
+    4300016: Cylinder.004
+    4300018: Cylinder.005
+    4300020: Cylinder.006
+    4300022: Cylinder.008
+    4300024: Cube.000
+    4300026: Cube.031
+    4300028: Cube.001
+    4300030: base
+    4300032: body
+    4300034: rotator
+    4300036: pivot
+    7400000: Armature.002|Armature.002Action
+    7400002: Armature.001|Armature.002Action
+    7400004: Armature.001|fire
+    7400006: Armature|Armature.002Action
+    7400008: Armature|fire
+    7400010: Armature.001|fire.001
+    7400012: Armature|fire.001
+    7400014: fire.002
+    7400016: Armature|fire.002
+    9500000: //RootNode
+    13700000: Cube.031
+    13700002: Cube.032
+    13700004: Cube.033
+    13700006: Cube.000
+    13700008: body
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: fire.002
+      takeName: fire.002
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/l_0
+        weight: 1
+      - path: Armature/root/l_0/l_1
+        weight: 1
+      - path: Armature/root/l_0/l_1/l_2
+        weight: 1
+      - path: Armature/root/l_0/l_1/l_2/l_3
+        weight: 1
+      - path: Armature/root/l_0/l_1/l_2/l_3/l_3_end
+        weight: 1
+      - path: Armature/root/r_0
+        weight: 1
+      - path: Armature/root/r_0/r_1
+        weight: 1
+      - path: Armature/root/r_0/r_1/r_2
+        weight: 1
+      - path: Armature/root/r_0/r_1/r_2/r_3
+        weight: 1
+      - path: Armature/root/r_0/r_1/r_2/r_3/r_3_end
+        weight: 1
+      - path: Armature/root/root.001
+        weight: 1
+      - path: Armature/root/root.001/root.002
+        weight: 1
+      - path: Armature/root/root.001/root.002/root.002_end
+        weight: 1
+      - path: Cube.029
+        weight: 1
+      - path: Cube.033
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|fire.002
+      takeName: Armature|fire.002
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/l_0
+        weight: 1
+      - path: Armature/root/l_0/l_1
+        weight: 1
+      - path: Armature/root/l_0/l_1/l_2
+        weight: 1
+      - path: Armature/root/l_0/l_1/l_2/l_3
+        weight: 1
+      - path: Armature/root/l_0/l_1/l_2/l_3/l_3_end
+        weight: 1
+      - path: Armature/root/r_0
+        weight: 1
+      - path: Armature/root/r_0/r_1
+        weight: 1
+      - path: Armature/root/r_0/r_1/r_2
+        weight: 1
+      - path: Armature/root/r_0/r_1/r_2/r_3
+        weight: 1
+      - path: Armature/root/r_0/r_1/r_2/r_3/r_3_end
+        weight: 1
+      - path: Armature/root/root.001
+        weight: 1
+      - path: Armature/root/root.001/root.002
+        weight: 1
+      - path: Armature/root/root.001/root.002/root.002_end
+        weight: 1
+      - path: Cube.029
+        weight: 1
+      - path: Cube.033
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -138,5 +138,8 @@
     <Compile Include="Assets\Editor\NodeEditor.cs" />
     <Compile Include="Assets\Editor\WayPointEditor.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\common\shaders\StandartShader.shader" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

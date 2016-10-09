@@ -1,7 +1,4 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
-
-Shader "Custom/StandartShader"
+﻿Shader "Custom/StandartShader"
 {
 	Properties
 	{
@@ -57,13 +54,12 @@ Shader "Custom/StandartShader"
 				float4 ambient = UNITY_LIGHTMODEL_AMBIENT;
 
 				float NdotL = saturate( dot( N, L ) );
-				float4 diffuseTerm = NdotL * _LightColor0 * attenuation;
+				float4 diffuse = NdotL * _LightColor0 * attenuation;
 
-				float4 diffuse = tex2D( _MainTex , i.uv );
+				float4 albedo = tex2D( _MainTex , i.uv );
 
-				float4 finalColor = ( ambient + diffuseTerm ) * diffuse;
 
-				return finalColor;
+				return ( ambient + diffuse ) * albedo;
 			}
 
 			ENDCG

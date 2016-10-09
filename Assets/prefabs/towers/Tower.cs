@@ -62,6 +62,18 @@ public class Tower : MonoBehaviour
 			target_unit = closest_unit;
 		}
 	}
+	Vector3 randSphere()
+	{
+		var cosa = Random.Range( -1.0f , 1.0f );
+		var sina = Mathf.Sqrt( 1.0f - cosa * cosa );
+		var phi = Random.Range( 0.0f , Mathf.PI );
+		var r = Mathf.Sqrt( Random.Range( 0.0f , 1.0f ) );
+		return new Vector3(
+				sina * Mathf.Cos( phi ) ,
+				sina * Mathf.Sin( phi ) ,
+				cosa
+			);
+	}
 	void Update()
 	{
 
@@ -82,6 +94,7 @@ public class Tower : MonoBehaviour
 				var unit_end_pos = target_unit.transform.position + Vector3.up * 10.0f;
 				var vel = ( unit_end_pos - unit_origin_pos ) / Time.deltaTime;
 				var unit_speed = vel.magnitude;
+				unit_end_pos += randSphere() * 3.0f;
 				var dr = fire_point.transform.position - unit_end_pos;
 				var bullet_speed = SceneMeta.singleton.bullet_speed;
 				var a = bullet_speed * bullet_speed - unit_speed * unit_speed;
@@ -105,7 +118,7 @@ public class Tower : MonoBehaviour
 
 				var bullet = Instantiate( SceneMeta.singleton.bullet_prefab ,
 					fire_point.transform.position , Quaternion.LookRotation( dir ) , transform );
-				bullet.GetComponent<Bullet>().target = target_unit.gameObject;
+				//bullet.GetComponent<Bullet>().target = target_unit.gameObject;
 				bullet.GetComponent<Bullet>().dir = dir;
 
 				

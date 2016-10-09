@@ -4,40 +4,42 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-	public GameObject target;
 	public Vector3 dir;
-	float lifetime = 10.0f;
+	float lifetime = 3.0f;
 	bool attached = false;
-	// Use this for initialization
 	void Start()
 	{
 
 	}
-
-	// Update is called once per frame
-	void Update()
+	void OnTriggerEnter( Collider col )
 	{
-		if( attached )
+		if( col.gameObject.GetComponent< Tower >() )
 		{
 			return;
 		}
+		
+		var eu = col.GetComponent<EnemyUnit>();
+		if( eu )
+		{
+			transform.SetParent( col.transform );
+			eu.makeDamage( 50.0f );
+		}
+		attached = true;
+	}
+	// Update is called once per frame
+	void Update()
+	{
 		lifetime -= Time.deltaTime;
-		if( lifetime <= 0.0f || target == null )
+		if( lifetime <= 0.0f )
 		{
 			Destroy( gameObject );
 			return;
 		}
-
-		var dr = target.transform.position + Vector3.up * 10.0f - transform.position;
-		if( dr.magnitude < 2.0f )
+		if( attached )
 		{
-			//Destroy( gameObject );
-			transform.SetParent( target.transform );
-			target.GetComponent<EnemyUnit>().makeDamage( 50.0f );
-			attached = true;
 			return;
 		}
-		//dr = dr.normalized;
+		
 		transform.position += dir * SceneMeta.singleton.bullet_speed * Time.deltaTime;
 	}
 }

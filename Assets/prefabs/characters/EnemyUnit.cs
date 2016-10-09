@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemyUnit : MonoBehaviour
 {
 	public PathNode target;
-	public float health = 250.0f;
+	public float health = 550.0f;
 	void Start()
 	{
 		NavMeshAgent agent = GetComponent<NavMeshAgent>();
@@ -32,7 +32,7 @@ public class EnemyUnit : MonoBehaviour
 			return;
 		}
 		var dr = target.transform.position - transform.position;
-		if( dr.magnitude < 10.0f )
+		if( dr.magnitude < 20.0f )
 		{
 			if( target.next == null || target.next.Capacity == 0 )
 			{

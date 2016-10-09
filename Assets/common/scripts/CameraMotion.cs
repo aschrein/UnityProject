@@ -21,7 +21,7 @@ public class CameraMotion : MonoBehaviour
 			Touch tch = Input.GetTouch( 0 );
 			transform.position += new Vector3(
 				tch.deltaPosition.x , 0.0f , tch.deltaPosition.y
-				);
+				) * Time.deltaTime * 100.0f;
 			last_mouse_pos = tch.position;
 			drag = false;
 			if( tch.deltaPosition.magnitude > 0.0f )
@@ -53,7 +53,7 @@ public class CameraMotion : MonoBehaviour
 			}
 			transform.position += new Vector3(
 				dp.x , 0.0f , dp.y
-				);
+				) * Time.deltaTime * 100.0f;
 			last_mouse_pos = Input.mousePosition;
 		}
 		if( !drag && Input.GetMouseButtonUp( 0 ) )

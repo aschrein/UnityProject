@@ -5,7 +5,6 @@ using UnityEngine;
 public class PathNode : MonoBehaviour
 {
 	public List<PathNode> next = new List<PathNode>();
-	public HashSet<PathNode> income = new HashSet<PathNode>();
 	void Start()
 	{
 

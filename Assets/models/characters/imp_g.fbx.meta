@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c8a642c6ab370db44a7bede143207146
-timeCreated: 1475830462
+guid: 192bcdca822d6df47b4dfd9977817653
+timeCreated: 1476121502
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -30,23 +30,25 @@ ModelImporter:
     100044: l_sight
     100046: l_toe
     100048: l_toe_end
-    100050: r_ankle
-    100052: r_arm
-    100054: r_calf
-    100056: r_ear_0
-    100058: r_ear_1
-    100060: r_ear_2
-    100062: r_ear_2_end
-    100064: r_fingers
-    100066: r_fingers_end
-    100068: r_forearm
-    100070: r_hand
-    100072: r_hip
-    100074: r_shoulder
-    100076: r_sight
-    100078: r_toe
-    100080: r_toe_end
-    100082: Sphere.001
+    100050: Point
+    100052: Point.001
+    100054: r_ankle
+    100056: r_arm
+    100058: r_calf
+    100060: r_ear_0
+    100062: r_ear_1
+    100064: r_ear_2
+    100066: r_ear_2_end
+    100068: r_fingers
+    100070: r_fingers_end
+    100072: r_forearm
+    100074: r_hand
+    100076: r_hip
+    100078: r_shoulder
+    100080: r_sight
+    100082: r_toe
+    100084: r_toe_end
+    100086: Sphere.001
     400000: Armature
     400002: Bone
     400004: Bone.001
@@ -72,30 +74,34 @@ ModelImporter:
     400044: l_sight
     400046: l_toe
     400048: l_toe_end
-    400050: r_ankle
-    400052: r_arm
-    400054: r_calf
-    400056: r_ear_0
-    400058: r_ear_1
-    400060: r_ear_2
-    400062: r_ear_2_end
-    400064: r_fingers
-    400066: r_fingers_end
-    400068: r_forearm
-    400070: r_hand
-    400072: r_hip
-    400074: r_shoulder
-    400076: r_sight
-    400078: r_toe
-    400080: r_toe_end
-    400082: Sphere.001
+    400050: Point
+    400052: Point.001
+    400054: r_ankle
+    400056: r_arm
+    400058: r_calf
+    400060: r_ear_0
+    400062: r_ear_1
+    400064: r_ear_2
+    400066: r_ear_2_end
+    400068: r_fingers
+    400070: r_fingers_end
+    400072: r_forearm
+    400074: r_hand
+    400076: r_hip
+    400078: r_shoulder
+    400080: r_sight
+    400082: r_toe
+    400084: r_toe_end
+    400086: Sphere.001
     4300000: Sphere.001
-    7400000: Run
-    7400002: Run2
-    7400004: Armature|Action
-    7400006: Armature|Armature.001Action
+    7400000: idle
+    7400002: run
+    7400004: Armature|idle
+    7400006: Armature|idle.001
     7400008: Armature|Run
-    7400010: Armature|Run2
+    7400010: Armature|run
+    7400012: Armature|Run2
+    7400014: Armature|Untitled
     9500000: //RootNode
     13700000: Sphere.001
   materials:
@@ -120,8 +126,8 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Run
-      takeName: Run
+      name: idle
+      takeName: idle
       firstFrame: 0
       lastFrame: 100
       wrapMode: 0
@@ -226,14 +232,250 @@ ModelImporter:
         weight: 1
       - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe/r_toe_end
         weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
       - path: Sphere.001
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Run2
-      takeName: Run2
+      name: run
+      takeName: run
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Bone.001
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2/l_ear_2_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2/r_ear_2_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers/l_fingers_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers/r_fingers_end
+        weight: 1
+      - path: Armature/Bone/l_hip
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe/l_toe_end
+        weight: 1
+      - path: Armature/Bone/r_hip
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe/r_toe_end
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
+      - path: Sphere.001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|idle
+      takeName: Armature|idle
+      firstFrame: 0
+      lastFrame: 87
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Bone.001
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2/l_ear_2_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2/r_ear_2_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers/l_fingers_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers/r_fingers_end
+        weight: 1
+      - path: Armature/Bone/l_hip
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe/l_toe_end
+        weight: 1
+      - path: Armature/Bone/r_hip
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe/r_toe_end
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
+      - path: Sphere.001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|idle.001
+      takeName: Armature|idle.001
       firstFrame: 0
       lastFrame: 100
       wrapMode: 0
@@ -338,229 +580,9 @@ ModelImporter:
         weight: 1
       - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe/r_toe_end
         weight: 1
-      - path: Sphere.001
+      - path: Point
         weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Action
-      takeName: Armature|Action
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/Bone
-        weight: 1
-      - path: Armature/Bone/Bone.001
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2/l_ear_2_end
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2/r_ear_2_end
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers/l_fingers_end
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers/r_fingers_end
-        weight: 1
-      - path: Armature/Bone/l_hip
-        weight: 1
-      - path: Armature/Bone/l_hip/l_sight
-        weight: 1
-      - path: Armature/Bone/l_hip/l_sight/l_calf
-        weight: 1
-      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle
-        weight: 1
-      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe
-        weight: 1
-      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe/l_toe_end
-        weight: 1
-      - path: Armature/Bone/r_hip
-        weight: 1
-      - path: Armature/Bone/r_hip/r_sight
-        weight: 1
-      - path: Armature/Bone/r_hip/r_sight/r_calf
-        weight: 1
-      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle
-        weight: 1
-      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe
-        weight: 1
-      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe/r_toe_end
-        weight: 1
-      - path: Sphere.001
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Armature.001Action
-      takeName: Armature|Armature.001Action
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/Bone
-        weight: 1
-      - path: Armature/Bone/Bone.001
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2/l_ear_2_end
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2/r_ear_2_end
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers/l_fingers_end
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers
-        weight: 1
-      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers/r_fingers_end
-        weight: 1
-      - path: Armature/Bone/l_hip
-        weight: 1
-      - path: Armature/Bone/l_hip/l_sight
-        weight: 1
-      - path: Armature/Bone/l_hip/l_sight/l_calf
-        weight: 1
-      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle
-        weight: 1
-      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe
-        weight: 1
-      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe/l_toe_end
-        weight: 1
-      - path: Armature/Bone/r_hip
-        weight: 1
-      - path: Armature/Bone/r_hip/r_sight
-        weight: 1
-      - path: Armature/Bone/r_hip/r_sight/r_calf
-        weight: 1
-      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle
-        weight: 1
-      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe
-        weight: 1
-      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe/r_toe_end
+      - path: Point.001
         weight: 1
       - path: Sphere.001
         weight: 1
@@ -674,14 +696,18 @@ ModelImporter:
         weight: 1
       - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe/r_toe_end
         weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
       - path: Sphere.001
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Run2
-      takeName: Armature|Run2
+      name: Armature|run
+      takeName: Armature|run
       firstFrame: 0
       lastFrame: 100
       wrapMode: 0
@@ -785,6 +811,242 @@ ModelImporter:
       - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe
         weight: 1
       - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe/r_toe_end
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
+      - path: Sphere.001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Run2
+      takeName: Armature|Run2
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Bone.001
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2/l_ear_2_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2/r_ear_2_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers/l_fingers_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers/r_fingers_end
+        weight: 1
+      - path: Armature/Bone/l_hip
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe/l_toe_end
+        weight: 1
+      - path: Armature/Bone/r_hip
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe/r_toe_end
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
+      - path: Sphere.001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Untitled
+      takeName: Armature|Untitled
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Bone.001
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/l_ear_0/l_ear_1/l_ear_2/l_ear_2_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/r_ear_0/r_ear_1/r_ear_2/r_ear_2_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/l_shoulder/l_arm/l_forearm/l_hand/l_fingers/l_fingers_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/r_shoulder/r_arm/r_forearm/r_hand/r_fingers/r_fingers_end
+        weight: 1
+      - path: Armature/Bone/l_hip
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe
+        weight: 1
+      - path: Armature/Bone/l_hip/l_sight/l_calf/l_ankle/l_toe/l_toe_end
+        weight: 1
+      - path: Armature/Bone/r_hip
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe
+        weight: 1
+      - path: Armature/Bone/r_hip/r_sight/r_calf/r_ankle/r_toe/r_toe_end
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
         weight: 1
       - path: Sphere.001
         weight: 1

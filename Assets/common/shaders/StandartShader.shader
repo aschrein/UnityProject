@@ -12,18 +12,17 @@
 #include "Lighting.cginc"
 		ENDCG
 
-	SubShader
+		SubShader
 	{
-		LOD 200
-		Tags{ "RenderType" = "Opaque" }
+		Tags{ "RenderType" = "Opaque" "LightMode" = "ForwardBase" }
+		Lighting On
 		Pass
 		{
-			Lighting On
-			Tags{ "LightMode" = "ForwardBase" }
-			CGPROGRAM
-	#pragma vertex vert
-	#pragma fragment frag
-	#pragma multi_compile_fwdbase
+		
+		CGPROGRAM
+#pragma vertex vert
+#pragma fragment frag
+#pragma multi_compile_fwdbase
 
 			uniform half4 _Color;
 			sampler2D _MainTex;
@@ -31,8 +30,9 @@
 			{
 				float4 pos : SV_POSITION;
 				fixed2 uv : TEXCOORD0;
-				float3 lightDir : TEXCOORD1;
+				fixed3 lightDir : TEXCOORD1;
 				fixed3 normal : TEXCOORD2;
+				half3 ambient : COLOR0;
 				LIGHTING_COORDS( 3 , 4 )
 			};
 			vertexOutput vert( appdata_base v )
@@ -42,6 +42,8 @@
 				o.uv = v.texcoord;
 				o.lightDir = normalize( ObjSpaceLightDir( v.vertex ) );
 				o.normal = normalize( v.normal ).xyz;
+				half3 wnormal = UnityObjectToWorldNormal( o.normal );
+				o.ambient = ShadeSH9( half4( wnormal , 1 ) );
 				TRANSFER_VERTEX_TO_FRAGMENT( o );
 				return o;
 			}
@@ -51,7 +53,7 @@
 				float3 N = normalize( i.normal );
 
 				float attenuation = LIGHT_ATTENUATION( i );
-				float4 ambient = UNITY_LIGHTMODEL_AMBIENT;
+				//float4 ambient = UNITY_LIGHTMODEL_AMBIENT;
 
 				float NdotL = saturate( dot( N, L ) );
 				float4 diffuse = NdotL * _LightColor0 * attenuation;
@@ -59,11 +61,11 @@
 				float4 albedo = tex2D( _MainTex , i.uv );
 
 
-				return ( ambient + diffuse ) * albedo;
+				return ( half4( i.ambient , 0 ) + diffuse ) * albedo * _Color;
 			}
 
 			ENDCG
 		}
 	}
-FallBack "Diffuse"
+		FallBack "Diffuse"
 }

@@ -5,7 +5,8 @@ using UnityEngine.AI;
 
 public class Tower : MonoBehaviour
 {
-	float timer = 0.0f;
+	//float timer = 0.0f;
+	bool is_ready = false;
 	Vector3 unit_origin_pos;
 	bool pos_measured = false;
 	bool shooting = false;
@@ -17,6 +18,7 @@ public class Tower : MonoBehaviour
 		pivot = transform.Find( "pivot" ).gameObject;
 		body = pivot.transform.Find( "body_node" ).gameObject;
 		fire_point = body.transform.Find( "fire_point" ).gameObject;
+		GetComponent<Animator>().Play( 0 );
 	}
 	void OnTriggerEnter( Collider collider )
 	{
@@ -33,6 +35,12 @@ public class Tower : MonoBehaviour
 		{
 			units_in_area.Remove( eu );
 		}
+	}
+	void ready()
+	{
+		//Debug.Log( "tower is ready" );
+		is_ready = true;
+		GetComponent<Animator>().enabled = false;
 	}
 	void reload()
 	{
@@ -82,19 +90,18 @@ public class Tower : MonoBehaviour
 			chooseNextUnit();
 		} else
 		{
-			timer -= Time.deltaTime;
-			if( timer <= 0.0f )
+			if( is_ready )
 			{
 				if( !pos_measured )
 				{
-					unit_origin_pos = target_unit.transform.position + Vector3.up * 10.0f;
+					unit_origin_pos = target_unit.transform.position + Vector3.up * 1.0f;
 					pos_measured = true;
 					return;
 				}
-				var unit_end_pos = target_unit.transform.position + Vector3.up * 10.0f;
+				var unit_end_pos = target_unit.transform.position + Vector3.up * 1.0f;
 				var vel = ( unit_end_pos - unit_origin_pos ) / Time.deltaTime;
 				var unit_speed = vel.magnitude;
-				unit_end_pos += randSphere() * 3.0f;
+				//unit_end_pos += randSphere() * 3.0f;
 				var dr = fire_point.transform.position - unit_end_pos;
 				var bullet_speed = SceneMeta.singleton.bullet_speed;
 				var a = bullet_speed * bullet_speed - unit_speed * unit_speed;
@@ -110,18 +117,21 @@ public class Tower : MonoBehaviour
 							-dir.x , 0.0f , -dir.z
 							)
 					);
+				GetComponent<Animator>().enabled = true;
 				GetComponent<Animator>().Play( 0 );
+				//dir = body.transform.TransformDirection( dir );
 				float angle = 90.0f - Vector3.Angle( new Vector3( dir.x , 0.0f , dir.z ) , dir ) * Mathf.Sign( dir.y );
 				body.transform.localRotation = Quaternion.AngleAxis( angle , new Vector3( 1.0f , 0.0f , 0.0f ) );
-				timer = SceneMeta.singleton.tower_cooldown;
+				//timer = SceneMeta.singleton.tower_cooldown;
 				pos_measured = false;
 
 				var bullet = Instantiate( SceneMeta.singleton.bullet_prefab ,
 					fire_point.transform.position , Quaternion.LookRotation( dir ) , transform );
 				//bullet.GetComponent<Bullet>().target = target_unit.gameObject;
 				bullet.GetComponent<Bullet>().dir = dir;
+				is_ready = false;
 
-				
+
 			}
 		}
 
@@ -195,6 +205,6 @@ public class Tower : MonoBehaviour
 			Gizmos.DrawLine( position , target_unit.transform.position );
 		}
 		Gizmos.color = new Color( 1.0f , 1.0f , 0.0f );
-		Gizmos.DrawWireSphere( position , GetComponent<SphereCollider>().radius );
+		//Gizmos.DrawWireSphere( position , GetComponent<SphereCollider>().radius );
 	}
 }

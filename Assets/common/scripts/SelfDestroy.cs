@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelfDestroy : MonoBehaviour {
-
+public class SelfDestroy : MonoBehaviour
+{
+	public float lifetime;
 	// Use this for initialization
-	void Start () {
-		
+	void Start()
+	{
+
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
-		
+	void Update()
+	{
+		lifetime -= Time.deltaTime;
+		if( lifetime <= 0.0f )
+		{
+			Destroy( gameObject );
+		}
 	}
 }

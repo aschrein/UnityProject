@@ -141,6 +141,7 @@
   <ItemGroup>
     <None Include="Assets\common\shaders\BlockShader.shader" />
     <None Include="Assets\common\shaders\StandartShader.shader" />
+    <None Include="Assets\pixelization\OutlineShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

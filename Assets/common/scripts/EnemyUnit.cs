@@ -11,11 +11,11 @@ public class EnemyUnit : MonoBehaviour
 	{
 		NavMeshAgent agent = GetComponent<NavMeshAgent>();
 		agent.destination = target.transform.position;
-		MiniMap.singleton.addUnit( gameObject );
+		//MiniMap.singleton.addUnit( gameObject );
 	}
 	void OnDestroy()
 	{
-		MiniMap.singleton.removeUnit( gameObject );
+		//MiniMap.singleton.removeUnit( gameObject );
 	}
 	public void makeDamage( float damage )
 	{
@@ -32,7 +32,7 @@ public class EnemyUnit : MonoBehaviour
 			return;
 		}
 		var dr = target.transform.position - transform.position;
-		if( dr.magnitude < 20.0f )
+		if( dr.magnitude < SceneMeta.singleton.waypoint_radius )
 		{
 			if( target.next == null || target.next.Capacity == 0 )
 			{

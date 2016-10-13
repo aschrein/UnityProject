@@ -21,6 +21,7 @@ public class Bullet : MonoBehaviour
 		var eu = col.GetComponent<EnemyUnit>();
 		if( eu )
 		{
+			Instantiate( SceneMeta.singleton.hiteffect_prefab , transform.position , Quaternion.identity , transform );
 			transform.SetParent( col.transform );
 			eu.makeDamage( 50.0f );
 		}

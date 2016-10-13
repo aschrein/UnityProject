@@ -18,7 +18,7 @@ public class PathNode : MonoBehaviour
 	{
 		Vector3 position = transform.position;
 		Gizmos.color = new Color( 1.0f , 0.0f , 0.0f );
-		Gizmos.DrawSphere( position , 10.0f );
+		Gizmos.DrawSphere( position , 0.5f );
 		foreach( var target in next )
 		{
 			if( target )
